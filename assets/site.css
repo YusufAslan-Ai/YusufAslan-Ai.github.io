@@ -62,3 +62,5 @@ html,body{margin:0}
 .ya .art-hero .art-badge.geo,.ya .art-hero .post-tag.geo{background:#4B5FD0}
 .ya .skill-tags a{padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;font-size:13px;font-weight:600;color:var(--fg-dim);transition:all .18s ease}
 .ya .skill-tags a:hover{background:var(--accent-soft);border-color:var(--accent-soft);color:#fff;transform:translateY(-2px)}
+.ya a.kw{color:var(--accent-soft);font-weight:600;text-decoration:underline;text-decoration-color:color-mix(in oklab,var(--accent-soft) 45%,transparent);text-underline-offset:3px;transition:color .15s,text-decoration-color .15s}
+.ya a.kw:hover{color:var(--accent);text-decoration-color:var(--accent)}
