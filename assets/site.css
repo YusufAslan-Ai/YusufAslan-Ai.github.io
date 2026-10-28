@@ -45,3 +45,5 @@
 .ya .art-more .back{margin:28px 0 0;font-weight:700;}.ya .art-more .back a{color:var(--accent-soft);}
 @media (max-width:760px){.ya .rel-grid{grid-template-columns:1fr;}.ya .art-body p,.ya .art-body li{font-size:17.5px;}}
 html,body{margin:0}
+.ya .post-tag.mp{background:#B4690E;}.ya .post-tag.gads{background:#1F7A4D;}
+.ya .post-ic.mp,.ya .art-badge.mp{background:#B4690E;}.ya .post-ic.gads,.ya .art-badge.gads{background:#1F7A4D;}
