@@ -1,0 +1,29 @@
+{
+ "username": "yusufaslancom",
+ "posts": [
+  {
+   "id": "18119739718771160",
+   "url": "https://www.instagram.com/p/DfHACFEEVh9/",
+   "image": "/assets/instagram/18119739718771160.jpg",
+   "type": "carousel",
+   "alt": "Reklama para harcıyorsun ama satış gelmiyor mu? 👀",
+   "date": "2026-10-30T07:02:56+0000"
+  },
+  {
+   "id": "18147424459581698",
+   "url": "https://www.instagram.com/p/DfB2sz4AEQP/",
+   "image": "/assets/instagram/18147424459581698.jpg",
+   "type": "carousel",
+   "alt": "Merhaba, ben Yusuf 👋",
+   "date": "2026-10-28T07:05:12+0000"
+  },
+  {
+   "id": "18438157285176383",
+   "url": "https://www.instagram.com/reel/DfAURY0gIY5/",
+   "image": "/assets/instagram/18438157285176383.jpg",
+   "type": "reel",
+   "alt": "Reklamın satış getirmiyorsa, bütçeyi artırmak çözüm değil. 🚫💸",
+   "date": "2026-10-27T16:46:01+0000"
+  }
+ ]
+}
