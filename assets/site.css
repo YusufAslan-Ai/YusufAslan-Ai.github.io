@@ -81,3 +81,5 @@ html,body{margin:0}
 .ya .ig-follow{white-space:nowrap;}
 @media (max-width:1100px){.ya .ig-grid{grid-template-columns:repeat(3,1fr);}}
 @media (max-width:560px){.ya .ig-grid{grid-template-columns:repeat(2,1fr);gap:10px;}.ya .ig-head{align-items:flex-start;}}
+.ya .nav-ig{display:inline-flex;align-items:center;}
+.ya .nav-ig svg{display:block;}
