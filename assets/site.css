@@ -64,3 +64,20 @@ html,body{margin:0}
 .ya .skill-tags a:hover{background:var(--accent-soft);border-color:var(--accent-soft);color:#fff;transform:translateY(-2px)}
 .ya a.kw{color:var(--accent-soft);font-weight:600;text-decoration:underline;text-decoration-color:color-mix(in oklab,var(--accent-soft) 45%,transparent);text-underline-offset:3px;transition:color .15s,text-decoration-color .15s}
 .ya a.kw:hover{color:var(--accent);text-decoration-color:var(--accent)}
+
+/* Instagram — son paylaşımlar */
+.ya .ig-band{display:none;}
+.ya .ig-band.ig-ready{display:block;}
+.ya .ig-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:32px;}
+.ya .ig-head .section-head{margin-bottom:0;}
+.ya .ig-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;}
+.ya .ig-item{position:relative;display:block;aspect-ratio:4/5;border-radius:var(--radius-sm);overflow:hidden;background:var(--surface-raised);border:1px solid var(--border);}
+.ya .ig-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;}
+.ya .ig-item::after{content:"";position:absolute;inset:0;background:linear-gradient(to top, rgba(11,31,58,.45), transparent 45%);opacity:0;transition:opacity .3s ease;}
+.ya .ig-item:hover img,.ya .ig-item:focus-visible img{transform:scale(1.05);}
+.ya .ig-item:hover::after,.ya .ig-item:focus-visible::after{opacity:1;}
+.ya .ig-badge{position:absolute;top:10px;right:10px;z-index:1;width:30px;height:30px;display:grid;place-items:center;border-radius:999px;background:rgba(11,31,58,.72);color:#fff;}
+.ya .ig-badge svg{width:15px;height:15px;}
+.ya .ig-follow{white-space:nowrap;}
+@media (max-width:1100px){.ya .ig-grid{grid-template-columns:repeat(3,1fr);}}
+@media (max-width:560px){.ya .ig-grid{grid-template-columns:repeat(2,1fr);gap:10px;}.ya .ig-head{align-items:flex-start;}}
