@@ -1,3 +1,45 @@
+/* Mobil menu: dar ekranlarda gizlenen linkleri "☰" dugmesiyle acilan panelde gosterir. */
+(function () {
+  var nav = document.querySelector('.ya .nav');
+  var links = nav && nav.querySelector('.nav-links');
+  if (!links || nav.querySelector('.nav-toggle')) return;
+  var en = (document.documentElement.lang || '').indexOf('en') === 0;
+  var btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'nav-toggle';
+  btn.setAttribute('aria-expanded', 'false');
+  btn.setAttribute('aria-controls', 'nav-panel');
+  btn.setAttribute('aria-label', en ? 'Open menu' : 'Menüyü aç');
+  btn.innerHTML = '<span></span><span></span><span></span>';
+  var panel = document.createElement('div');
+  panel.className = 'nav-panel';
+  panel.id = 'nav-panel';
+  links.querySelectorAll('a:not(.nav-cta)').forEach(function (a) {
+    var c = a.cloneNode(true);
+    c.removeAttribute('class');
+    if (a.classList.contains('nav-ig')) {
+      c.innerHTML = a.innerHTML + '<span>Instagram</span>';
+      c.className = 'np-ig';
+    }
+    if (a.classList.contains('nav-lang')) {
+      c.textContent = en ? 'Türkçe' : 'English';
+      c.className = 'np-lang';
+    }
+    panel.appendChild(c);
+  });
+  links.appendChild(btn);
+  nav.appendChild(panel);
+  function setOpen(o) {
+    nav.classList.toggle('menu-open', o);
+    btn.setAttribute('aria-expanded', o ? 'true' : 'false');
+    btn.setAttribute('aria-label', o ? (en ? 'Close menu' : 'Menüyü kapat') : (en ? 'Open menu' : 'Menüyü aç'));
+  }
+  btn.addEventListener('click', function () { setOpen(!nav.classList.contains('menu-open')); });
+  panel.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+  document.addEventListener('click', function (e) { if (!nav.contains(e.target)) setOpen(false); });
+})();
+
 /* Motion layer for yusufaslann.com — subtle, runs once per element, respects reduced motion. */
 (function () {
   var doc = document.documentElement;
