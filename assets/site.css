@@ -97,3 +97,8 @@ html,body{margin:0}
 .ya .section-head .section-h{margin:0;max-width:24ch}
 .ya .blog-intro{margin:-24px auto 36px;text-align:center}
 .ya .ig-head{flex-direction:column;align-items:center;gap:20px}
+/* Instagram gorselleri: adet ne olursa olsun ortali */
+.ya .ig-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.ya .ig-grid .ig-item{flex:0 0 calc((100% - 5 * 14px) / 6)}
+@media (max-width:1100px){.ya .ig-grid .ig-item{flex-basis:calc((100% - 2 * 14px) / 3)}}
+@media (max-width:560px){.ya .ig-grid{gap:10px}.ya .ig-grid .ig-item{flex-basis:calc((100% - 10px) / 2)}}
