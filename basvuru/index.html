@@ -46,12 +46,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <label class="opt"><input type="radio" name="entry.1550380132" value="Birden fazlası" data-key="birden-fazla"><span>Birden fazlası</span></label>
 </fieldset>
 
-<div class="f-row">
 <label class="f-field"><span>Ad Soyad <span class="req">*</span></span><input type="text" name="entry.591589637" autocomplete="name" required></label>
-<label class="f-field"><span>WhatsApp numaranız <span class="req">*</span></span><input type="tel" name="entry.149741053" autocomplete="tel" inputmode="tel" placeholder="05XX XXX XX XX" required pattern="[0-9+()\s-]{10,20}"></label>
-</div>
-<label class="f-field"><span>Marka / işletme adı ve Instagram, web sitesi veya mağaza linki <span class="req">*</span></span><input type="text" name="entry.11445493" required placeholder="Örn. Marka Adı · trendyol.com/magaza/..."></label>
-<label class="f-field"><span>E-posta adresiniz <small>(isteğe bağlı)</small></span><input type="email" name="entry.712522924" autocomplete="email"></label>
+<label class="f-field"><span>Marka / işletme adı ve Instagram hesabı veya web siteniz <span class="req">*</span></span><input type="text" name="entry.11445493" required placeholder="Örn. Marka Adı · trendyol.com/magaza/..."></label>
+<label class="f-field"><span>WhatsApp Numaranız <span class="req">*</span></span><input type="tel" name="entry.149741053" autocomplete="tel" inputmode="tel" placeholder="05XX XXX XX XX" required pattern="[0-9+()\s-]{10,20}"></label>
+<label class="f-field"><span>E-posta adresiniz (isteğe bağlı)</span><input type="email" name="entry.712522924" autocomplete="email"></label>
 
 <fieldset class="f-group">
 <legend>Sektörünüz <span class="req">*</span></legend>
@@ -62,19 +60,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <label class="opt"><input type="radio" name="entry.1864458517" value="Diğer"><span>Diğer</span></label>
 </fieldset>
 
-<label class="f-field"><span>Aylık reklam bütçeniz <small>(isteğe bağlı)</small></span>
-<select name="entry.1313543635">
-<option value="">Seçiniz</option>
-<option>Henüz reklam vermiyorum</option>
-<option>10.000 TL'ye kadar</option>
-<option>10.000 – 30.000 TL</option>
-<option>30.000 – 100.000 TL</option>
-<option>100.000 TL ve üzeri</option>
-</select></label>
+<fieldset class="f-group">
+<legend>Aylık reklam bütçeniz</legend>
+<label class="opt"><input type="radio" name="entry.1313543635" value="Henüz reklam vermiyorum"><span>Henüz reklam vermiyorum</span></label>
+<label class="opt"><input type="radio" name="entry.1313543635" value="10.000 TL'ye kadar"><span>10.000 TL'ye kadar</span></label>
+<label class="opt"><input type="radio" name="entry.1313543635" value="10.000 – 30.000 TL"><span>10.000 – 30.000 TL</span></label>
+<label class="opt"><input type="radio" name="entry.1313543635" value="30.000 – 100.000 TL"><span>30.000 – 100.000 TL</span></label>
+<label class="opt"><input type="radio" name="entry.1313543635" value="100.000 TL ve üzeri"><span>100.000 TL ve üzeri</span></label>
+</fieldset>
 
-<label class="f-field"><span>Hedefiniz ve beklentiniz nedir? <small>(isteğe bağlı)</small></span><textarea name="entry.1935822240" rows="4" placeholder="Eklemek istediğiniz her şeyi yazabilirsiniz"></textarea></label>
+<label class="f-field"><span>Hedefiniz ve beklentiniz nedir? (Eklemek istediğiniz her şeyi yazabilirsiniz)</span><textarea name="entry.1935822240" rows="4" ></textarea></label>
 
-<label class="opt kvkk"><input type="checkbox" name="entry.1826373308" value="Kişisel verilerimin başvurumun değerlendirilmesi ve benimle iletişime geçilmesi amacıyla işlenmesine açık rıza veriyorum." required><span>Kişisel verilerimin başvurumun değerlendirilmesi ve benimle iletişime geçilmesi amacıyla işlenmesine açık rıza veriyorum. <span class="req">*</span></span></label>
+<fieldset class="f-group">
+<legend>KVKK Onayı <span class="req">*</span></legend>
+<label class="opt kvkk"><input type="checkbox" name="entry.1826373308" value="Kişisel verilerimin başvurumun değerlendirilmesi ve benimle iletişime geçilmesi amacıyla işlenmesine açık rıza veriyorum." required><span>Kişisel verilerimin başvurumun değerlendirilmesi ve benimle iletişime geçilmesi amacıyla işlenmesine açık rıza veriyorum.</span></label>
+</fieldset>
 
 <p class="f-error" id="f-error" role="alert" hidden></p>
 <button type="submit" class="btn btn-primary f-submit">Başvuruyu gönder <span class="arrow">→</span></button>
