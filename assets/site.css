@@ -89,3 +89,5 @@ html,body{margin:0}
 .ya p,.ya li,.ya blockquote,.ya td,.ya dd,.ya .about-text,.ya .hero-lead,.ya .section-intro,.ya .card-sub,
 .ya input,.ya textarea,.ya select{font-family:var(--f-read)}
 
+.ya .section-head{align-items:center}
+.ya .section-head .eyebrow{margin-bottom:0}
