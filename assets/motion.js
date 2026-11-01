@@ -17,7 +17,7 @@
   var inner = document.createElement('div');
   inner.className = 'nav-panel-inner';
   panel.appendChild(inner);
-  links.querySelectorAll('a:not(.nav-cta)').forEach(function (a) {
+  links.querySelectorAll('a:not(.nav-cta):not(.nav-lang)').forEach(function (a) {
     var c = a.cloneNode(true);
     c.removeAttribute('class');
     if (a.classList.contains('nav-ig')) {
