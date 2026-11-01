@@ -139,5 +139,5 @@ html,body{margin:0}
   .ya .brand-name{font-size:13px}
   .ya .nav-cta{padding:10px 16px}
 }
-@media (max-width:380px){.ya .brand-sub{display:none}}
+@media (max-width:430px){.ya .brand-sub{display:none}.ya .nav-inner{gap:12px}.ya .nav-links{gap:8px}}
 @media (prefers-reduced-motion:reduce){.ya .nav-panel{transition:none}}
