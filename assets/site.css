@@ -89,5 +89,11 @@ html,body{margin:0}
 .ya p,.ya li,.ya blockquote,.ya td,.ya dd,.ya .about-text,.ya .hero-lead,.ya .section-intro,.ya .card-sub,
 .ya input,.ya textarea,.ya select{font-family:var(--f-read)}
 
-.ya .section-head{align-items:center}
-.ya .section-head .eyebrow{margin-bottom:0}
+/* Bolum basliklari: etiket ustte, baslik altta, ikisi de ortali */
+.ya .section-head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px;margin-bottom:56px}
+@media (max-width:820px){.ya .section-head{gap:12px;margin-bottom:40px}}
+.ya .section-head .eyebrow{margin-bottom:0;justify-content:center}
+.ya .section-head .eyebrow::after{content:"";width:32px;height:2px;background:var(--accent-soft);flex-shrink:0}
+.ya .section-head .section-h{margin:0;max-width:24ch}
+.ya .blog-intro{margin:-24px auto 36px;text-align:center}
+.ya .ig-head{flex-direction:column;align-items:center;gap:20px}
