@@ -74,12 +74,14 @@
           if (done) return;
           done = true;
           try { sessionStorage.setItem('basvuru_ok', '1'); } catch (e) {}
+          try { localStorage.setItem('ya_basvurdu', '1'); } catch (e) {}
           location.href = '/tesekkurler/';
         }
         window.dataLayer.push({
           event: 'generate_lead',
           basvuru_turu: service ? service.getAttribute('data-key') : '',
           sektor: sector ? sector.value : '',
+          basvuru_kaynak: (function () { try { return new URLSearchParams(location.search).get('kaynak') || 'site'; } catch (e) { return 'site'; } })(),
           eventCallback: go,
           eventTimeout: 2000
         });
