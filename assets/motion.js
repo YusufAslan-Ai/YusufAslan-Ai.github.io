@@ -14,6 +14,9 @@
   var panel = document.createElement('div');
   panel.className = 'nav-panel';
   panel.id = 'nav-panel';
+  var inner = document.createElement('div');
+  inner.className = 'nav-panel-inner';
+  panel.appendChild(inner);
   links.querySelectorAll('a:not(.nav-cta)').forEach(function (a) {
     var c = a.cloneNode(true);
     c.removeAttribute('class');
@@ -25,7 +28,7 @@
       c.textContent = en ? 'Türkçe' : 'English';
       c.className = 'np-lang';
     }
-    panel.appendChild(c);
+    inner.appendChild(c);
   });
   links.appendChild(btn);
   nav.appendChild(panel);
