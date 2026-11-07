@@ -150,3 +150,12 @@ html,body{margin:0}
 }
 @media (max-width:430px){.ya .brand-name{white-space:nowrap}}
 @media (max-width:370px){.ya .brand-name{font-size:11px;letter-spacing:.05em}.ya .nav-inner{gap:8px}}
+.art-faq{margin-top:56px;}
+.art-faq h2{margin-top:0;}
+.art-faq .faq-item{border:1px solid var(--border-strong);border-radius:var(--radius-sm);background:var(--surface);margin-bottom:12px;}
+.art-faq summary{cursor:pointer;list-style:none;padding:18px 52px 18px 22px;font-weight:700;font-size:18px;line-height:1.45;color:var(--fg);position:relative;}
+.art-faq summary::-webkit-details-marker{display:none;}
+.art-faq summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-size:26px;font-weight:400;color:var(--accent);line-height:1;}
+.art-faq details[open] summary::after{content:"\2212";}
+.art-faq summary:focus-visible{outline:2px solid var(--accent-soft);outline-offset:2px;border-radius:var(--radius-sm);}
+.art-faq .faq-item p{margin:0;padding:0 22px 20px;font-size:17.5px;line-height:1.75;color:var(--fg-dim);}
