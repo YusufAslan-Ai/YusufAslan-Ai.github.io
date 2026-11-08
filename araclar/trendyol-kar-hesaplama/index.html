@@ -88,7 +88,7 @@ var TL=function(v){return isFinite(v)?new Intl.NumberFormat('tr-TR',{style:'curr
 var N=function(v,d){return isFinite(v)?new Intl.NumberFormat('tr-TR',{maximumFractionDigits:d==null?2:d}).format(v):'—'};
 var P=function(v){return isFinite(v)?'%'+new Intl.NumberFormat('tr-TR',{maximumFractionDigits:1}).format(v*100):'—'};
 var V=function(id){var el=document.getElementById(id);if(!el)return NaN;var x=String(el.value).trim().replace(/[₺%\s]/g,'');if(x==='')return NaN;if(x.indexOf(',')>-1)x=x.replace(/\./g,'').replace(',','.');else if(/^\d{1,3}(\.\d{3})+$/.test(x))x=x.replace(/\./g,'');return parseFloat(x)};
-var track=function(name,extra){window.dataLayer=window.dataLayer||[];var o={event:'arac_kullanimi',arac:name};for(var k in extra)o[k]=extra[k];window.dataLayer.push(o)};
+var track=function(name,extra){window.dataLayer=window.dataLayer||[];var o={event:'arac_'+name+(extra&&extra.adim?'_'+extra.adim:''),arac:name};for(var k in extra)o[k]=extra[k];window.dataLayer.push(o)};
 var tracked=false;
 (function(){var ids=['p','c','k','kc','com','cb','sh','sv','pk','ad','ret','st','vat'],r=document.getElementById('ty-res');
 function calc(){var p=V('p'),c=V('c'),k=V('k')/100,kc=V('kc')/100,com=V('com')/100,sh=V('sh')||0,sv=V('sv')||0,pk=V('pk')||0,ad=V('ad')||0,ret=(V('ret')||0)/100,st=(isFinite(V('st'))?V('st'):1)/100,vat=document.getElementById('vat').checked,cb=document.getElementById('cb').value;
