@@ -47,7 +47,7 @@
       });
       update();
     }, { threshold: 0.15 });
-    document.querySelectorAll('.final-cta, .art-cta, footer').forEach(function (el) { io.observe(el); });
+    document.querySelectorAll('.final-cta, .art-cta, footer, .tool-card, .tool-result').forEach(function (el) { io.observe(el); });
   }
   function nudgeOpen() { return !!document.querySelector('.ya-nudge.is-open'); }
   function update() {

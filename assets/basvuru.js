@@ -9,6 +9,11 @@
 
   // ?hizmet=pazaryeri gibi linklerden gelen seçimi işaretle
   try {
+    var skor = new URLSearchParams(location.search).get('skor');
+    if (skor && /^\d{1,3}$/.test(skor)) {
+      var ta = form.querySelector('textarea[name="entry.1935822240"]');
+      if (ta && !ta.value) ta.value = 'Meta reklam hesabı sağlık testi puanım: ' + skor + '/100. ';
+    }
     var pre = new URLSearchParams(location.search).get('hizmet');
     if (pre) {
       var r = form.querySelector('input[name="entry.1550380132"][data-key="' + pre + '"]');
