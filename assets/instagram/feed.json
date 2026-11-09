@@ -2,6 +2,14 @@
  "username": "yusufaslancom",
  "posts": [
   {
+   "id": "18141468976550950",
+   "url": "https://www.instagram.com/p/Dfc-T0CiT2P/",
+   "image": "/assets/instagram/18141468976550950.jpg",
+   "type": "carousel",
+   "alt": "Meta, reklam motoru Andromeda'nın yeni sürümünü anlattı ve rakamlar çok net 👇",
+   "date": "2026-11-07T19:51:10+0000"
+  },
+  {
    "id": "17997600237110104",
    "url": "https://www.instagram.com/p/DfZ_pn5DHqL/",
    "image": "/assets/instagram/17997600237110104.jpg",
@@ -40,14 +48,6 @@
    "type": "carousel",
    "alt": "Merhaba, ben Yusuf 👋",
    "date": "2026-10-28T07:05:12+0000"
-  },
-  {
-   "id": "18438157285176383",
-   "url": "https://www.instagram.com/reel/DfAURY0gIY5/",
-   "image": "/assets/instagram/18438157285176383.jpg",
-   "type": "reel",
-   "alt": "Reklamın satış getirmiyorsa, bütçeyi artırmak çözüm değil. 🚫💸",
-   "date": "2026-10-27T16:46:01+0000"
   }
  ]
 }
