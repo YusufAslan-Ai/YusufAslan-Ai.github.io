@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}(function(){var c;try{c=localStorage.getItem('ya_consent')}catch(e){}var g=c==='granted'?'granted':'denied';gtag('consent','default',{analytics_storage:g,ad_storage:g,ad_user_data:g,ad_personalization:g,functionality_storage:'granted',security_storage:'granted',wait_for_update:500});!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('consent',g==='granted'?'grant':'revoke');})();</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MX9SPPMS');</script>
+<!-- End Google Tag Manager -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to use Google Search Console for e-commerce · Yusuf Aslan</title>
+<meta name="description" content="How to use Google Search Console for an online store: choosing a property, reading the Performance report, fixing indexing issues and shopping reports.">
+<link rel="canonical" href="https://yusufaslann.com/en/blog/how-to-use-google-search-console/">
+<link rel="alternate" hreflang="en" href="https://yusufaslann.com/en/blog/how-to-use-google-search-console/">
+<link rel="alternate" hreflang="tr" href="https://yusufaslann.com/blog/google-search-console-nasil-kullanilir/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="article"><meta property="og:title" content="How to use Google Search Console for e-commerce"><meta property="og:description" content="How to use Google Search Console for an online store: choosing a property, reading the Performance report, fixing indexing issues and shopping reports."><meta property="og:url" content="https://yusufaslann.com/en/blog/how-to-use-google-search-console/"><meta property="og:site_name" content="Yusuf Aslan"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="tr_TR"><meta property="og:image" content="https://yusufaslann.com/assets/og/en-how-to-use-google-search-console.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How to use Google Search Console for e-commerce"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How to use Google Search Console for e-commerce"><meta name="twitter:description" content="How to use Google Search Console for an online store: choosing a property, reading the Performance report, fixing indexing issues and shopping reports."><meta name="twitter:image" content="https://yusufaslann.com/assets/og/en-how-to-use-google-search-console.jpg">
+<link rel="stylesheet" href="/assets/site.css?v=20261108c">
+<link rel="stylesheet" href="/assets/motion.css">
+<style>.art-body .tbl-wrap{overflow-x:auto;margin:0 0 28px;-webkit-overflow-scrolling:touch}.art-body table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}.art-body th,.art-body td{text-align:left;padding:12px 14px;border-bottom:1px solid color-mix(in oklab,currentColor 18%,transparent);vertical-align:top}.art-body th{color:var(--fg);font-weight:700}.art-body td{color:var(--fg-dim)}.art-body p a:not(.kw),.art-body li a:not(.kw){color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}@media(max-width:480px){.art-body th,.art-body td{padding:10px 8px;font-size:14px}}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to use Google Search Console for e-commerce", "description": "How to use Google Search Console for an online store: choosing a property, reading the Performance report, fixing indexing issues and shopping reports.", "inLanguage": "en", "datePublished": "2026-11-24", "dateModified": "2026-11-24", "mainEntityOfPage": "https://yusufaslann.com/en/blog/how-to-use-google-search-console/", "author": {"@type": "Person", "name": "Yusuf Aslan", "url": "https://yusufaslann.com/", "sameAs": ["https://www.linkedin.com/in/yusuf-aslan-134075b1/", "https://instagram.com/yusufaslancom"]}, "publisher": {"@type": "Person", "name": "Yusuf Aslan"}, "image": "https://yusufaslann.com/assets/og/en-how-to-use-google-search-console.jpg"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Is Google Search Console free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Google Search Console is completely free; you only need to verify that you own the site."}}, {"@type": "Question", "name": "Should I choose a Domain or a URL-prefix property?", "acceptedAnswer": {"@type": "Answer", "text": "If you can edit DNS, choose a Domain property; it covers all subdomains and both http and https. If you can’t access DNS, use a URL-prefix property."}}, {"@type": "Question", "name": "What does “Crawled – currently not indexed” mean?", "acceptedAnswer": {"@type": "Answer", "text": "Google crawled the page but didn’t index it. Many sites have some pages in this state; if it’s an important product or category page, make the content unique and strengthen internal links."}}, {"@type": "Question", "name": "Should I click Request indexing every day?", "acceptedAnswer": {"@type": "Answer", "text": "No. Google applies a daily request limit per property and a request doesn’t guarantee indexing. For many pages, submitting a sitemap is the better route."}}, {"@type": "Question", "name": "How fresh is Search Console data?", "acceptedAnswer": {"@type": "Answer", "text": "The most recent day can be preliminary and may change within hours. By default the report shows complete days."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yusufaslann.com/en/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://yusufaslann.com/en/#blog"}, {"@type": "ListItem", "position": 3, "name": "How to use Google Search Console for e-commerce", "item": "https://yusufaslann.com/en/blog/how-to-use-google-search-console/"}]}</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX9SPPMS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="ya art-page" lang="en">
+<header class="nav gutter"><div class="nav-inner container"><a href="/en/" class="brand" aria-label="Yusuf Aslan"><span class="brand-mark">YA</span><span class="brand-name"> Yusuf Aslan <span class="brand-sub">Digital Marketing & Advertising</span></span></a><nav class="nav-links" aria-label="Main menu"><a href="/en/#hakkimda">About</a><a href="/en/#yaklasim">Approach</a><a href="/en/#hizmetler">Services</a><a href="/en/#deneyim">Experience</a><a href="/en/#blog">Blog</a><a href="/blog/google-search-console-nasil-kullanilir/" class="nav-lang">TR</a><a href="/basvuru/" class="nav-cta">Apply</a></nav></div></header>
+<main>
+<section class="art-hero gutter seo"><div class="art-wm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/><path d="M8 10.5h5M10.5 8v5"/></svg></div><div class="container art-wrap">
+<nav class="crumbs" aria-label="breadcrumb"><a href="/en/">Home</a><span>/</span><a href="/en/#blog">Blog</a><span>/</span><span>SEO</span></nav>
+<div class="art-badge seo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/><path d="M8 10.5h5M10.5 8v5"/></svg></div>
+<span class="post-tag seo">SEO</span>
+<h1 class="art-title">How to use Google Search Console for e-commerce</h1>
+<p class="art-meta">By <a href="/en/#hakkimda">Yusuf Aslan</a> · 7 min read · November 2026</p>
+</div></section>
+<article class="art-body gutter"><div class="container art-wrap">
+<p><strong>Google Search Console is Google’s free tool that shows how your site appears in Google Search. For an online store it does three jobs: it shows which queries and pages bring traffic (Performance report), whether your important product and category pages are indexed (Page indexing report), and where your product results have errors (Shopping reports).</strong> Below is the order I use, from setup to a weekly routine, based on Google’s own help pages.</p>
+
+<h2>Which property type should you choose?</h2>
+<p>You start by adding your site as a “property”. There are two kinds: a <strong>Domain property</strong> and a <strong>URL-prefix property</strong>. According to <a href="https://support.google.com/webmasters/answer/34592?hl=en" target="_blank" rel="noopener">Google’s guide to adding a property</a>, a Domain property covers every subdomain and both http and https, but it can only be verified with a DNS record. A URL-prefix property covers one protocol and path and offers many verification methods.</p>
+<div class="tbl-wrap"><table>
+<thead><tr><th></th><th>Domain property</th><th>URL-prefix property</th></tr></thead>
+<tbody>
+<tr><td>Scope</td><td>All subdomains, http and https</td><td>Only the exact address you enter and paths under it</td></tr>
+<tr><td>Verification</td><td>DNS record only</td><td>HTML file, meta tag, Google Analytics, Tag Manager and more</td></tr>
+<tr><td>When to use</td><td>First choice if you can edit DNS</td><td>If you can’t access DNS or only want to track one folder</td></tr>
+</tbody></table></div>
+<p>For online stores I always start with a Domain property so that www, non-www and mobile subdomain traffic aren’t split across separate properties. On platforms like Shopify, the DNS usually sits with your domain registrar, so that’s where you add the TXT record.</p>
+
+<h2>Which metrics matter in the Performance report?</h2>
+<p>The <a href="https://support.google.com/webmasters/answer/7576553?hl=en" target="_blank" rel="noopener">Performance report</a> shows four metrics: <strong>clicks</strong> (how often people clicked through to your site from Google), <strong>impressions</strong> (how often your site appeared in results), <strong>CTR</strong> (clicks divided by impressions) and <strong>average position</strong> (the average position of your topmost result). The default view covers the last three months. The newest data can be preliminary and may change within hours; it is shown as a dotted line.</p>
+<p>Here is how I read it for a store:</p>
+<ul>
+<li><strong>Queries tab:</strong> high impressions with low CTR point to pages whose title and description need work.</li>
+<li><strong>Pages tab:</strong> see whether traffic lands on product pages, category pages or blog posts. In most stores the biggest opportunity is category pages; I cover how to strengthen them in <a class="kw" href="/en/blog/category-pages-ecommerce-seo/">category page SEO for e-commerce</a>.</li>
+<li><strong>Compare:</strong> choose “Compare” in the date filter, put two periods side by side and sort by clicks difference.</li>
+</ul>
+<p>One thing to know: <a href="https://support.google.com/webmasters/answer/17011364" target="_blank" rel="noopener">Google’s notes on the data</a> explain that by property, all results from your site for the same query count once, while by page each URL counts separately. So CTR and position in the Pages tab can differ from the property total. That’s expected, not a bug.</p>
+
+<h2>Why aren’t your product pages indexed?</h2>
+<p>The <a href="https://support.google.com/webmasters/answer/7440203?hl=en" target="_blank" rel="noopener">Page indexing report</a> lists which pages Google has indexed and why others aren’t. Google is clear that most sites have some unindexed pages and that you shouldn’t expect every URL to be indexed; what matters is that your important pages are. The reasons I see most in e-commerce:</p>
+<ul>
+<li><strong>Crawled – currently not indexed:</strong> Google saw the page but didn’t add it. Common when product copy is taken from the manufacturer, very thin, or nearly identical to other pages.</li>
+<li><strong>Discovered – currently not indexed:</strong> Google knows the URL but hasn’t crawled it yet. Often a sign of weak internal linking or too many low-value URLs.</li>
+<li><strong>Duplicate without user-selected canonical:</strong> filter, sort and variant parameter URLs repeating the same content.</li>
+</ul>
+<p>Don’t try to fix everything in the list. Ask first: should this page bring sales? Fix the product and category pages that should, and leave the rest out of the index on purpose.</p>
+
+<h2>How do you tell Google about a new page?</h2>
+<p>For a single page, use the <a href="https://support.google.com/webmasters/answer/9012289?hl=en" target="_blank" rel="noopener">URL Inspection tool</a>:</p>
+<ol>
+<li>Paste the full URL into the search bar at the top of Search Console.</li>
+<li>Check whether it’s indexed, which canonical Google chose and when it was last crawled.</li>
+<li>If you changed the page, run “Test live URL” to see how Google sees it now.</li>
+<li>If everything looks fine, click “Request indexing”.</li>
+<li>For many pages, don’t request one by one; submit your sitemap under “Sitemaps”.</li>
+</ol>
+<p>Google notes there is a daily request limit per property and that a request doesn’t guarantee indexing. Requesting the same page every day won’t help; the issue is usually the page content or site structure.</p>
+
+<h2>What do the shopping reports do for a store?</h2>
+<p>According to <a href="https://support.google.com/webmasters/answer/12660034?hl=en" target="_blank" rel="noopener">Google’s shopping reports page</a>, if Google identifies your site as an online merchant you get extra tools: the <strong>Merchant listings</strong> and <strong>Product snippets</strong> rich result reports, a merchant opportunities report under “Shopping”, and shipping and returns settings. These reports flag missing price, availability or review fields in your product structured data. I explain how to set that data up in <a class="kw" href="/en/blog/structured-data-schema-on-product-pages/">structured data (schema) for product pages</a>.</p>
+
+<h2>Why use annotations?</h2>
+<p>In November 2025 Google added <a href="https://developers.google.com/search/blog/2025/11/custom-chart-annotations" target="_blank" rel="noopener">custom annotations</a> to the Performance report. You can attach a note of up to 120 characters to a date on the chart, and everyone with access to the property can see it. I log every site change, sale period and theme update there, so when traffic shifts you don’t have to guess why. It’s especially useful for separating a <a class="kw" href="/en/blog/google-core-update-what-to-do/">ranking drop after a Google core update</a> from changes you made yourself.</p>
+
+<h2>What should a weekly routine look like?</h2>
+<p>You don’t need to check daily. Once a week, 15 minutes in this order is enough:</p>
+<ol>
+<li>In Performance, compare the last 7 days with the previous 7; review the 5 pages that lost the most clicks.</li>
+<li>In Page indexing, look for a sudden jump in “not indexed” pages.</li>
+<li>Check the shopping and rich result reports for new errors.</li>
+<li>Add that week’s changes as annotations.</li>
+</ol>
+<p>If you run a Shopify store, pair this routine with the <a class="kw" href="/en/blog/shopify-seo-settings/">Shopify SEO settings checklist</a>. And if you want Search Console data read together with your ad and SEO strategy, take a look at my <a class="kw" href="/en/#hizmetler">e-commerce SEO and digital marketing services</a>.</p>
+<section class="art-faq" aria-labelledby="sss"><h2 id="sss">Frequently asked questions</h2><details class="faq-item"><summary>Is Google Search Console free?</summary><p>Yes. Google Search Console is completely free; you only need to verify that you own the site.</p></details><details class="faq-item"><summary>Should I choose a Domain or a URL-prefix property?</summary><p>If you can edit DNS, choose a Domain property; it covers all subdomains and both http and https. If you can’t access DNS, use a URL-prefix property.</p></details><details class="faq-item"><summary>What does “Crawled – currently not indexed” mean?</summary><p>Google crawled the page but didn’t index it. Many sites have some pages in this state; if it’s an important product or category page, make the content unique and strengthen internal links.</p></details><details class="faq-item"><summary>Should I click Request indexing every day?</summary><p>No. Google applies a daily request limit per property and a request doesn’t guarantee indexing. For many pages, submitting a sitemap is the better route.</p></details><details class="faq-item"><summary>How fresh is Search Console data?</summary><p>The most recent day can be preliminary and may change within hours. By default the report shows complete days.</p></details></section>
+<aside class="art-cta"><h2>Let’s look at your Search Console data together.</h2><p>The first consultation is free. We open your Search Console and ad account together, and I tell you clearly and honestly which pages are losing traffic, which aren’t indexed and what to fix first.</p><a class="btn btn-primary" href="/basvuru/">Book a free consultation <span class="arrow">→</span></a></aside>
+</div></article>
+<section class="art-more gutter"><div class="container art-wrap"><h2>Keep reading</h2><div class="rel-grid"><a class="rel-card" href="/en/blog/seo-and-geo-checklist/"><span class="post-tag seo">SEO</span><h3>A 10-point checklist for SEO and GEO</h3><span class="rel-more">Read the article →</span></a><a class="rel-card" href="/en/blog/google-ai-mode-for-ecommerce/"><span class="post-tag seo">SEO</span><h3>Google AI Mode for e-commerce: what should you change?</h3><span class="rel-more">Read the article →</span></a><a class="rel-card" href="/en/blog/merchant-center-disapproved-products/"><span class="post-tag gads">GOOGLE ADS</span><h3>Merchant Center disapproved products: 7 causes and fixes</h3><span class="rel-more">Read the article →</span></a></div><p class="back"><a href="/en/#blog">← All articles</a></p></div></section>
+</main>
+<footer class="gutter"><div class="container foot"><div class="foot-copy"><strong>Yusuf Aslan</strong> · Digital Marketing & Advertising <small>© 2026 — All rights reserved. · <a href="https://www.linkedin.com/in/yusuf-aslan-134075b1/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://instagram.com/yusufaslancom" target="_blank" rel="noopener">Instagram</a> · <a href="/en/privacy/">Privacy & cookies</a></small></div></div></footer>
+</div>
+<script src="/assets/motion.js?v=20261101m" defer></script>
+<script src="/assets/nudge.js?v=20261101m" defer></script>
+<script src="/assets/mbar.js?v=20261108a" defer></script>
+<script src="/assets/consent.js?v=20261108a" defer></script>
+</body>
+</html>
